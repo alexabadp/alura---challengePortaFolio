@@ -44,6 +44,40 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+
+  max-width: 1300px;
+}
+
+section .menu__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+section .menu__header img {
+  height: 24px;
+  width: 24px;
+}
+
+section .menu__header .menu__title {
+  font-size: 16px;
+}
+
+section nav .menu__list {
+  display: flex;
+  gap: 32px;
+}
+
+section nav .menu__list .menu__list_item {
+  font-size: 16px;
+}
+
+section nav .menu__list .menu__list__item__contacto {
+  font-weight: bold;
 }
 
 /*Sección Title*/
