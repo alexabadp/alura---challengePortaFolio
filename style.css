@@ -46,38 +46,30 @@ https://en.bem.info/methodology/quick-start/*/
 section.menu {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  padding: 30px;
-
-  max-width: 1300px;
+  padding: 16px;
 }
 
-section .menu__header {
+.menu .menu__header {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
 }
 
-section .menu__header img {
-  height: 24px;
+.menu .menu__header img {
   width: 24px;
+  height: 24px;
 }
 
-section .menu__header .menu__title {
+.menu .menu__header .menu__title {
   font-size: 16px;
 }
 
-section nav .menu__list {
-  display: flex;
-  gap: 32px;
+.menu nav .menu__list .menu__list__item {
+  display: none;
 }
 
-section nav .menu__list .menu__list_item {
+.menu nav .menu__list .menu__list__item__contacto {
   font-size: 16px;
-}
-
-section nav .menu__list .menu__list__item__contacto {
-  font-weight: bold;
 }
 
 /*Sección Title*/
@@ -85,6 +77,28 @@ section nav .menu__list .menu__list__item__contacto {
 section.title {
 }
 
+.title__div {
+  padding: 16px;
+}
+
+.title .title__div .title__profile {
+  width: 98px;
+  height: 98px;
+}
+
+.title .title__div .title__container .title__bio {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: justify;
+}
+
+.title .title__div .title__container .title__subsection {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.title .title__div .title__container .title__network {
+}
 /*Sección About*/
 
 section.about {
@@ -121,6 +135,17 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
   /* Menú */
+  .menu nav .menu__list {
+    display: flex;
+    gap: 30px;
+  }
+  .menu nav .menu__list .menu__list__item {
+    display: block;
+  }
+
+  .menu nav .menu__list .menu__list__item__contacto {
+    font-weight: bold;
+  }
 
   /*title*/
 
