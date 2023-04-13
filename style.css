@@ -98,10 +98,68 @@ section.title {
 }
 
 .title .title__div .title__container .title__network {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
 }
 /*Sección About*/
 
 section.about {
+  background-color: #eaf2fd;
+  padding: 16px;
+}
+
+.about .about__container .about__title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.about .about__container .about__paragraph {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Seccion Skills */
+
+section.skills {
+  padding: 16px;
+  background: #e5e5e5;
+}
+
+.skills .skills__title {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills .skills__line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 16px;
+}
+
+.skills .skills__line .skills__box {
+  position: relative;
+  display: inline-block;
+  width: 156px;
+  height: 118px;
+  background: #ffffff;
+}
+
+.skills .skills__line .skills__box .skills__img {
+  position: absolute;
+  top: 38px;
+  left: 16px;
+}
+
+.skills .skills__line .skills__box .skills__name {
+  position: absolute;
+  top: 83px;
+  left: 16px;
 }
 
 /*Sección Hobbies*/
