@@ -76,6 +76,7 @@ section.menu {
 /*Sección Title*/
 
 section.title {
+  border: 2px solid red;
 }
 
 .title__div {
