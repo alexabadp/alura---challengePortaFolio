@@ -76,7 +76,6 @@ section.menu {
 /*Sección Title*/
 
 section.title {
-  border: 2px solid red;
 }
 
 .title__div {
@@ -276,6 +275,37 @@ section.academic {
 /* experiencia*/
 
 section.experience {
+  padding-top: 16px;
+  text-align: center;
+}
+
+.experience .experience__section__title {
+  margin: 16 auto;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.experience .experiencie__box {
+  border: 2px solid red;
+  width: 296px;
+  margin: auto;
+}
+
+.experience .experiencie__box .experience__img {
+  width: 100%;
+  height: 144px;
+}
+
+.experience .experiencie__box .experience__info .experience__title {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.experience .experiencie__box .experience__info .experience__text {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 /*Contacto*/
