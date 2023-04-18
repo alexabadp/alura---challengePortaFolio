@@ -141,6 +141,7 @@ section.skills {
   display: flex;
   flex-wrap: wrap;
   gap: 32px 16px;
+  justify-content: center;
 }
 
 .skills .skills__line .skills__box {
@@ -181,6 +182,7 @@ section.hobbies {
   display: flex;
   flex-wrap: wrap;
   gap: 32px 16px;
+  justify-content: center;
 }
 
 .hobbies .hobbies__line .hobbies__box {
@@ -277,22 +279,22 @@ section.academic {
 section.experience {
   padding-top: 16px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .experience .experience__section__title {
-  margin: 16 auto;
+  /* margin: 16 auto; */
   font-size: 22px;
   font-weight: 700;
 }
 
 .experience .experiencie__box {
-  border: 2px solid red;
-  width: 296px;
   margin: auto;
+  padding: 32px;
 }
 
 .experience .experiencie__box .experience__img {
-  width: 100%;
+  width: 296px;
   height: 144px;
 }
 
@@ -308,44 +310,101 @@ section.experience {
   font-weight: 500;
 }
 
+.experience .experiencie__box .experience__info .experience__description {
+  text-align: left;
+}
+
+.experience
+  .experiencie__box
+  .experience__info
+  .experience__description
+  .experience__repo
+  .experiencia__botao--repo {
+  padding: 12px 16px;
+  color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  width: 96px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.experience
+  .experiencie__box
+  .experience__info
+  .experience__description
+  .experience__demo
+  .experience__botao--demo {
+  padding: 12px 16px;
+  color: #fff;
+  background-color: #2a7ae4;
+  border: 1px solid #2a7ae4;
+  width: 96px;
+  height: 40px;
+}
+
 /*Contacto*/
 
 section.formcontato {
+  background: #eaf2fd;
 }
 
+.formcontato .formcontato__contacto {
+  padding: 32px;
+}
+
+.formcontato .formcontato__contacto .formcontato--esquerda .formcontato__img {
+  display: none;
+}
+
+.formcontato .formcontato__contacto .formcontato__text .formcontato__title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.formcontato .formcontato__contacto .formcontato__text .formcontato__subtext {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.formcontato__form .formcontato__input {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
+.formcontato__form .formcontato__textarea {
+  width: 100%;
+  height: 133px;
+
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
+.formcontato__form .formcontato__botao {
+  width: 133px;
+  height: 40px;
+  background-color: #2a7ae4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
 /*footeer*/
 
 section.footer {
+  text-align: center;
+  padding: 32px;
+}
+
+.footer .footer__rodape p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
-
-/*Tablet*/
-@media (min-width: 768px) {
-  /* Menú */
-  .menu nav .menu__list {
-    display: flex;
-    gap: 30px;
-  }
-  .menu nav .menu__list .menu__list__item {
-    display: block;
-  }
-
-  .menu nav .menu__list .menu__list__item__contacto {
-    font-weight: bold;
-  }
-
-  /*title*/
-
-  /*Skills*/
-
-  /*Hobbies*/
-
-  /*Formación Académica*/
-
-  /*Experiencia Profesional*/
-}
 
 /*Mobile*/
 @media (min-width: 425px) {
@@ -353,17 +412,189 @@ Utiliza las referencias de los breakpoints @media abajo */
 
   /*Titulo*/
 
+  .title .title__div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0 32px 32px 32px;
+  }
+
+  .title .title__div .title__profile {
+    order: 1;
+    width: 146px;
+    height: 146px;
+  }
+
+  .title .title__div .title__container .title__subsection {
+    font-size: 16px;
+  }
+
+  .title .title__div .title__container .title__network .title__network__item {
+    font-size: 16px;
+    font-weight: 500;
+  }
   /*Sección sobre mi*/
+
+  .about .about__container .about__title {
+    padding: 32px 32px 8px 32px;
+  }
+
+  .about .about__container .about__paragraph {
+    padding: 8px 32px;
+    margin: 0px;
+  }
+
+  .about .about__container img {
+    padding: 16px 32px;
+  }
 
   /*Skills*/
 
+  section.skills {
+    padding: 32px;
+  }
+
+  .skills .skills__line {
+    justify-content: center;
+  }
+
+  .skills .skills__line .skills__box {
+    height: 118px;
+    width: 224px;
+  }
+
   /*Hobbies*/
+
+  section.hobbies {
+    padding: 32px;
+  }
+
+  .hobbies .hobbies__line {
+    justify-content: center;
+  }
+
+  .hobbies .hobbies__line .hobbies__box {
+    height: 118px;
+    width: 224px;
+  }
+  /*Formación Académica*/
+
+  section.academic {
+    padding: 32px;
+  }
+
+  .academic
+    .academic__courses
+    .academic__courses__box
+    .academic__courses__list
+    .academic__courses__item__img {
+    width: 224px;
+    height: 118px;
+  }
+  /*Experiencia Profesional*/
+  .experience .experiencie__box {
+    padding: 32px;
+  }
+
+  .experience .experiencie__box .experience__img {
+    width: 704px;
+    height: 320px;
+  }
+
+  .experience .experiencie__box .experience__info .experience__title {
+  }
+  /*Contacto*/
+
+  /*Footer*/
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  /* Menú */
+
+  .menu nav .menu__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .menu nav .menu__list .menu__list__item {
+    display: block;
+  }
+
+  /*title*/
+  .title .title__div .title__profile {
+    width: 368px;
+    height: 368px;
+  }
+
+  .title .title__div .title__container .title__bio {
+    font-size: 52px;
+  }
+
+  .title .title__div .title__container .title__subsection {
+    font-size: 22px;
+  }
+
+  .title .title__div .title__container .title__network .title__network__item {
+    font-size: 16px;
+  }
+
+  /* About */
+  .about .about__container .about__title {
+    font-size: 32px;
+  }
+
+  .about .about__container .about__paragraph {
+    font-size: 16px;
+  }
+
+  .about .about__container img {
+    width: 140px;
+    height: 52px;
+  }
+  /*Skills*/
+
+  .skills .skills__title {
+    font-size: 32px;
+  }
+
+  .skills .skills__line .skills__box {
+    width: 176px;
+    height: 174px;
+  }
+
+  .skills .skills__line .skills__box .skills__img {
+    top: 94px;
+    left: 16px;
+  }
+
+  .skills .skills__line .skills__box .skills__name {
+    top: 139px;
+    left: 16px;
+  }
+
+  /*Hobbies*/
+
+  .hobbies .hobbies__title {
+    font-size: 32px;
+  }
+
+  .hobbies .hobbies__line .hobbies__box {
+    width: 176px;
+    height: 174px;
+  }
+
+  .hobbies .hobbies__line .hobbies__box .hobbies__img {
+    top: 94px;
+    left: 16px;
+  }
+
+  .hobbies .hobbies__line .hobbies__box .hobbies__name {
+    top: 139px;
+    left: 16px;
+  }
 
   /*Formación Académica*/
 
   /*Experiencia Profesional*/
-
-  /*Contacto*/
-
-  /*Footer*/
 }
