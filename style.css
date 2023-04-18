@@ -493,7 +493,7 @@ Utiliza las referencias de los breakpoints @media abajo */
   }
   /*Experiencia Profesional*/
   .experience .experiencie__box {
-    padding: 32px;
+    padding: 32px 0;
   }
 
   .experience .experiencie__box .experience__img {
@@ -501,8 +501,10 @@ Utiliza las referencias de los breakpoints @media abajo */
     height: 320px;
   }
 
-  .experience .experiencie__box .experience__info .experience__title {
+  .experience .experiencie__box .experience__info {
+    padding-left: 16px;
   }
+
   /*Contacto*/
 
   /*Footer*/
@@ -595,6 +597,78 @@ Utiliza las referencias de los breakpoints @media abajo */
   }
 
   /*Formación Académica*/
+  .academic .academic__title {
+    font-size: 32px;
+  }
+  .academic
+    .academic__courses
+    .academic__courses__box
+    .academic__courses__list
+    .academic__courses__item__img {
+    width: 368px;
+    height: 286px;
+  }
 
+  .academic
+    .academic__courses
+    .academic__courses__box
+    .academic__courses__list
+    .academic__courses__item__img
+    img {
+    width: 192px;
+    height: 130px;
+  }
   /*Experiencia Profesional*/
+
+  .experience {
+    padding: 152px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .experience > *:nth-child(odd):not(:first-child) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+  }
+
+  .experience .experience__section__title {
+    font-size: 32px;
+  }
+
+  .experience .experiencie__box {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .experience .experiencie__box .experience__img {
+    width: 752px;
+    height: 406px;
+  }
+  .experience .experiencie__box .experience__info .experience__title {
+    font-size: 22px;
+  }
+
+  .experience .experiencie__box .experience__info .experience__text {
+    font-size: 22px;
+  }
+
+  .experience .experiencie__box .experience__info .experience__description {
+    display: flex;
+  }
+
+  /*Contacto*/
+
+  .formcontato .formcontato__contacto {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .formcontato .formcontato__contacto .formcontato--esquerda .formcontato__img {
+    display: block;
+  }
+
+  /*Footer*/
 }
