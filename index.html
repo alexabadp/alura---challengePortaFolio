@@ -388,32 +388,61 @@
               lo antes posible.
             </h3>
             <form class="formcontato__form" name="form">
-              <input
-                class="formcontato__input"
-                type="text"
-                name="nombre"
-                placeholder="Nombre"
-              />
-              <input
-                class="formcontato__input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-              <input
-                class="formcontato__input"
-                type="text"
-                name="asunto"
-                placeholder="Assunto"
-              />
-              <textarea
-                class="formcontato__textarea"
-                rows="5"
-                cols="40"
-                id="mensagem"
-                name="mensaje"
-                placeholder="Mensaje"
-              ></textarea>
+              <div class="input-container">
+                <input
+                  name="nombre"
+                  id="nombre"
+                  class="formcontato__input"
+                  type="text"
+                  placeholder="Nombre"
+                  required
+                  minlength="1"
+                  maxlength="50"
+                  data-tipo="nombre"
+                />
+                <span class="input-message-error"></span>
+              </div>
+              <div class="input-container">
+                <input
+                  class="formcontato__input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                  data-tipo="email"
+                />
+                <span class="input-message-error"></span>
+              </div>
+
+              <div class="input-container">
+                <input
+                  class="formcontato__input"
+                  type="text"
+                  name="asunto"
+                  placeholder="Assunto"
+                  required
+                  minlength="1"
+                  maxlength="50"
+                  data-tipo="asunto"
+                />
+                <span class="input-message-error"></span>
+              </div>
+
+              <div class="input-container">
+                <textarea
+                  class="formcontato__textarea"
+                  rows="5"
+                  cols="40"
+                  id="mensagem"
+                  name="mensaje"
+                  placeholder="Mensaje"
+                  required
+                  minlength="10"
+                  maxlength="300"
+                  data-tipo="mensaje"
+                ></textarea>
+                <span class="input-message-error"></span>
+              </div>
               <button type="submit" class="formcontato__botao">
                 Enviar mensaje
               </button>
@@ -431,6 +460,6 @@
       </section>
     </div>
     <!-- Script del documento JavaScript -->
-    <script src="validacion.js"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>

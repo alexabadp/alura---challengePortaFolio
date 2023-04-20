@@ -75,9 +75,6 @@ section.menu {
 
 /*Sección Title*/
 
-section.title {
-}
-
 .title__div {
   padding: 16px;
 }
@@ -370,18 +367,20 @@ section.formcontato {
 .formcontato__form .formcontato__input {
   width: 100%;
   height: 56px;
-  margin-bottom: 32px;
+  margin-top: 32px;
   border-radius: 4px;
 }
 
 .formcontato__form .formcontato__textarea {
   width: 100%;
   height: 133px;
-
-  margin-bottom: 32px;
+  margin-top: 32px;
   border-radius: 4px;
 }
 
+.formcontato__form button {
+  margin-top: 32px;
+}
 .formcontato__form .formcontato__botao {
   width: 133px;
   height: 40px;
@@ -389,6 +388,10 @@ section.formcontato {
   color: #fff;
   font-size: 14px;
   font-weight: 600;
+}
+
+.input-message-error {
+  color: red;
 }
 /*footeer*/
 
